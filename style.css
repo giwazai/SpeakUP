@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: IBM plex sans;
+    user-select: none;
+    background-color: #0074e7;
 }
 
 /* ================
@@ -61,28 +63,41 @@ nav {
 
 .introduction {
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 10rem;
+    background: url(src/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .introduction-elements {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.introduction-elements h1 {
-    font-size: 4rem;
-    color: #0074e7;
+.elements-bg {
+    background-color: rgba(255, 255, 255, 0.075);
+    /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    /* Blurs content behind */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.intro-title {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
     margin: 0;
     margin-top: 2rem;
     margin-left: 1rem;
 }
 
-.introduction-elements p {
-    color: #0074e7;
-    opacity: 0.8;
-    font-size: 1.2rem;
-    font-weight: 500;
+.intro-text {
+    color: white;
+    font-size: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -96,7 +111,7 @@ nav {
     border-radius: 100px;
     font-weight: bold;
     margin-top: 3rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 /* ================
@@ -105,7 +120,7 @@ nav {
 
 .how-it-works {
     padding-top: 0.5rem;
-    padding-bottom: 20em;
+    padding-bottom: 4em;
     background-color: #0074e7;
 }
 
@@ -117,6 +132,7 @@ nav {
 }
 
 .how-it-works-elements {
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,4 +161,65 @@ nav {
 
 .roadmap p {
     margin: 0 auto;
+}
+
+.roadmap i{
+    margin-right: 1rem;
+}
+
+/* ================
+      BENEFITS
+===================*/
+
+.benefits {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.benefits-title {
+    font-size: 2rem;
+    color: #0074e7;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.benefits-elements {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.benefit-icon {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #0074e7;
+    padding: 1rem 1.4rem;
+    margin: 0;
+    border-radius: 30px;
+}
+
+.benefit-title {
+    font-weight: bold;
+    color: #0074e7;
+    font-size: 1.2rem;
+}
+
+.benefit-text {
+    color: #0074e7;
+    text-align: center;
 }

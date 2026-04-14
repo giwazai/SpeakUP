@@ -334,7 +334,7 @@ nav {
     padding-bottom: 3rem;
     background: url(src/CTA-bg.jpg);
     background-size: cover;
-    background-position: center 15rem;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -360,12 +360,64 @@ nav {
     width: 70%;
 }
 
-.CTA-elements a{
+.CTA-elements a {
     margin: 2rem;
-    background-color: blue;
+    background-color: #0074e7;
     border-radius: 30px;
     padding: 1rem;
     font-size: 1rem;
+    font-weight: bold;
     text-decoration: none;
     color: white;
+}
+
+/* ================
+      QUESTIONS
+===================*/
+
+.questions {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.questions-title {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    border-radius: 0px 30px 30px 0px;
+    background: #2218ed;
+    background: linear-gradient(134deg, rgba(34, 24, 237, 1) 0%, rgba(39, 174, 242, 1) 43%);
+    width: 20rem;
+}
+
+.questions-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.question-body {
+    background-color: #0074e7;
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 23rem;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.question-text {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

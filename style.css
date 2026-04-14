@@ -230,7 +230,7 @@ nav {
 
 .courses {
     padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     background-color: #0074e7;
 }
 
@@ -269,5 +269,103 @@ nav {
     font-size: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    color: white;
+}
+
+/* ================
+      REVIEWS
+===================*/
+
+.reviews {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.reviews-title {
+    font-size: 2rem;
+    color: #0074e7;
+    font-weight: bold;
+    text-align: center;
+}
+
+.reviews-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.review-body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.review-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0074e7;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.review-title i {
+    color: white;
+    background-color: #0074e7;
+    padding: 0.5rem 0.5rem;
+    border-radius: 30px;
+}
+
+.review-text {
+    color: #0074e7;
+}
+
+.review-text i {
+    color: rgb(255, 157, 0);
+}
+
+
+/* ================
+        CTA
+===================*/
+
+.CTA {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: url(src/CTA-bg.jpg);
+    background-size: cover;
+    background-position: center 15rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.CTA-elements {
+    padding: 2rem 0rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.59);
+}
+
+.CTA-title {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.CTA-text {
+    color: white;
+    width: 70%;
+}
+
+.CTA-elements a{
+    margin: 2rem;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
     color: white;
 }

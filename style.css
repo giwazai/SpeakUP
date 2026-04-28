@@ -5,7 +5,9 @@ body {
     padding: 0;
     font-family: IBM plex sans;
     user-select: none;
+    overflow-x: hidden;
 }
+
 
 /* ================
        HEADER
@@ -54,6 +56,30 @@ nav {
 .burger-icon {
     color: white;
     font-size: 2rem;
+}
+
+.burger-body {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    z-index: 10;
+}
+
+.burger-body a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 /* ================
@@ -381,21 +407,21 @@ nav {
 }
 
 .questions-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: bold;
     padding: 1rem 1rem;
     border-radius: 0px 30px 30px 0px;
     background: #2218ed;
     background: linear-gradient(134deg, rgba(34, 24, 237, 1) 0%, rgba(39, 174, 242, 1) 43%);
-    width: 20rem;
+    width: 19rem;
 }
 
 .questions-elements {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 1rem;
 }
 
 .question-body {
@@ -406,13 +432,14 @@ nav {
     margin-right: 1rem;
     border-radius: 10px;
     font-size: 1.2rem;
-    width: 23rem;
+    width: 20rem;
 }
 
 .question-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -420,4 +447,112 @@ nav {
 .question-text {
     margin-left: 1rem;
     margin-right: 1rem;
+    font-weight: 300;
+    overflow: hidden;
+    height: 0;
+}
+
+/* ================
+      FOOTER
+===================*/
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #0074e7;
+}
+
+.footer-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-left {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-icons a {
+    color: white;
+    font-size: 2rem;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    color: white;
+}
+
+.footer-right a {
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #0074e7;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ================
+    COURSES-PAGE
+===================*/
+
+.courses-page {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.courses-page-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.course-page-body {
+    background-color: #0074e7;
+    padding: 1rem;
+}
+
+.course-page-title {
+    font-weight: bold;
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.course-list {
+    padding: 0rem 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.course-list i {
+    margin-right: 0.5rem;
+}
+
+.course-item {
+    margin: 0;
+    padding: 0;
+}
+
+.course-price{
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: right;
 }

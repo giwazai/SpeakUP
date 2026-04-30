@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* ================
        HEADER
@@ -47,10 +51,29 @@ header {
     margin-left: 0.2rem;
     font-weight: bold;
     padding: 0.1rem 0.2rem;
+    color: #0074e7;
 }
 
 nav {
     display: none;
+}
+
+nav a {
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    transform: translateY(-10px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.burger {
+    display: block;
 }
 
 .burger-icon {
@@ -82,13 +105,28 @@ nav {
     color: black;
 }
 
+@media (min-width: 1025px) {
+    .burger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+}
+
 /* ================
     INTRODUCTION
 ===================*/
 
 .introduction {
     padding-top: 1rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     background: url(src/intro-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -106,7 +144,7 @@ nav {
 .elements-bg {
     background-color: rgba(255, 255, 255, 0.075);
     /* Semi-transparent */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     /* Blurs content behind */
     -webkit-backdrop-filter: blur(10px);
 }
@@ -135,8 +173,33 @@ nav {
     color: white;
     border-radius: 100px;
     font-weight: bold;
-    margin-top: 3rem;
+    margin-top: 5rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.introduction-elements a:hover {
+    transform: translateY(-10px);
+    color: #0074e7;
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    .intro-title {
+        width: 70%;
+    }
+
+    .intro-text {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .intro-text {
+        width: 50%;
+    }
 }
 
 /* ================
@@ -192,6 +255,22 @@ nav {
     margin-right: 1rem;
 }
 
+@media (min-width: 768px) {
+    .how-it-works-elements {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .how-it-works-elements {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+}
+
 /* ================
       BENEFITS
 ===================*/
@@ -206,15 +285,11 @@ nav {
     font-size: 2rem;
     color: #0074e7;
     font-weight: bold;
-    text-align: right;
-    margin-right: 1rem;
+    text-align: center;
 }
 
 .benefits-elements {
     margin-top: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -250,6 +325,18 @@ nav {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .benefit-text {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1025px) {
+     .benefit-text {
+        width: 45%;
+    }
+}
+
 /* ================
       COURSES
 ===================*/
@@ -274,15 +361,17 @@ nav {
     align-items: center;
     flex-direction: column;
     row-gap: 2rem;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
 }
 
 .course-body {
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    margin-left: 1rem;
-    margin-right: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 90%;
 }
 
 .course-title {
@@ -293,9 +382,9 @@ nav {
 
 .course-text {
     font-size: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     color: white;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 /* ================
@@ -319,12 +408,16 @@ nav {
     align-items: center;
     flex-direction: column;
     row-gap: 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
-.review-body {
-    margin-left: 1rem;
-    margin-right: 1rem;
+.review-body{
+    display: flex;
+    flex-direction: column;
 }
+
 
 .review-title {
     display: flex;
@@ -344,10 +437,29 @@ nav {
 
 .review-text {
     color: #0074e7;
+    margin: 0 auto;
 }
 
 .review-text i {
     color: rgb(255, 157, 0);
+}
+
+@media (min-width: 768px) {
+    .review-text {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1025px) {
+     .review-text{
+        width: 70%;
+     }
+
+     .reviews-elements{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+     }
 }
 
 
@@ -387,12 +499,12 @@ nav {
 }
 
 .CTA-elements a {
-    margin: 2rem;
+    margin-top: 1rem;
     background-color: #0074e7;
     border-radius: 30px;
     padding: 1rem;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
     color: white;
 }
@@ -403,18 +515,18 @@ nav {
 
 .questions {
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .questions-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
     padding: 1rem 1rem;
     border-radius: 0px 30px 30px 0px;
     background: #2218ed;
     background: linear-gradient(134deg, rgba(34, 24, 237, 1) 0%, rgba(39, 174, 242, 1) 43%);
-    width: 19rem;
+    display: inline-block;
 }
 
 .questions-elements {
@@ -422,24 +534,26 @@ nav {
     align-items: center;
     flex-direction: column;
     row-gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
 
 .question-body {
     background-color: #0074e7;
     color: white;
     margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     border-radius: 10px;
     font-size: 1.2rem;
-    width: 20rem;
+    width: 80%;
+    cursor: pointer;
 }
 
 .question-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;
+    font-weight: 500;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -470,7 +584,7 @@ footer {
 }
 
 .footer-left {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -491,7 +605,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     color: white;
 }
 
@@ -503,6 +617,14 @@ footer {
     color: #0074e7;
     font-weight: bold;
     text-align: center;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-elements {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 /* ================
@@ -514,16 +636,28 @@ footer {
     padding-bottom: 2rem;
 }
 
+.courses-page-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #0074e7;
+    text-align: center;
+}
+
 .courses-page-elements {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .course-page-body {
     background-color: #0074e7;
     padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
 }
 
 .course-page-title {
@@ -531,6 +665,7 @@ footer {
     color: white;
     font-size: 1.4rem;
     margin-bottom: 2rem;
+    margin-left: 1rem;
 }
 
 .course-list {
@@ -539,7 +674,7 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 1.2rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .course-list i {
@@ -551,8 +686,56 @@ footer {
     padding: 0;
 }
 
-.course-price{
+.course-price {
     font-weight: bold;
     font-size: 1.2rem;
     text-align: right;
 }
+
+/* ================
+    CONTACT-FORM
+===================*/
+
+.contact-form {
+    background-color: #0074e7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.form-title {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+input {
+    background: none;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 0.7rem;
+    color: white;
+    outline: none;
+    width: 70%;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {}

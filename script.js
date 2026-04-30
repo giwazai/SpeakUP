@@ -14,7 +14,7 @@ for (let i = 0; i < question.length; i++) {
                 targets: answer[i],
                 duration: 200,
                 easing: "easeInOutExpo",
-                height: 200,
+                height: answer[i].scrollHeight,
                 marginBottom: 20
             })
             anime({

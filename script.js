@@ -88,7 +88,7 @@ burger_button.addEventListener("click", () => {
 
 AOS.init({
   duration: 500,
-  once: false
+  once: true
 });
 
 

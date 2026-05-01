@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeakUp - main page</title>
     <link rel="icon" type="image/x-icon" href="src/UK-flag.png">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -43,58 +46,62 @@
                         спілкування, які працюють у реальному житті. Готовий заговорити? Почни зараз.</p>
                 </div>
 
-                <a href="#">Почати навчання</a>
+                <a href="course.html">Почати навчання</a>
             </div>
         </section>
         <section id="how-it-works" class="how-it-works">
             <p class="how-it-works-title">Як це працює?</p>
             <div class="how-it-works-elements">
-                <div class="roadmap">
+                <div data-aos="flip-left" class="roadmap">
                     <i class="fa-solid fa-pen"></i>
                     <p>Реєстрація на сайті та на курсах</p>
                 </div>
                 <hr>
-                <div class="roadmap">
+                <div data-aos-delay="100" data-aos="flip-right" class="roadmap">
                     <i class="fa-solid fa-language"></i>
                     <p>Вибір рівня англійської мови</p>
                 </div>
                 <hr>
-                <div class="roadmap">
+                <div data-aos-delay="300" data-aos="flip-left" class="roadmap">
                     <i class="fa-solid fa-circle"></i>
                     <p>Навчання онлайн</p>
                 </div>
                 <hr>
-                <div class="roadmap">
+                <div data-aos-delay="400" data-aos="flip-right" class="roadmap">
                     <i class="fa-solid fa-square-poll-horizontal"></i>
                     <p>Результат через місяць</p>
                 </div>
             </div>
         </section>
         <section id="benefits" class="benefits">
-            <p class="benefits-title">Переваги нашого навчання</p>
+            <p data-aos="fade-up" class="benefits-title">Переваги нашого навчання</p>
             <div class="benefits-elements">
                 <div class="benefit">
-                    <p class="benefit-icon">1</p>
-                    <p class="benefit-title">Носії мови</p>
-                    <p class="benefit-text">Навчайся з викладачами-носіями та занурюйся в справжню живу мову. Ти швидше
+                    <p data-aos="flip-left" class="benefit-icon">1</p>
+                    <p data-aos="fade" class="benefit-title">Носії мови</p>
+                    <p data-aos="zoom-in" class="benefit-text">Навчайся з викладачами-носіями та занурюйся в справжню
+                        живу мову. Ти швидше
                         звикнеш до вимови, сленгу та реальних розмовних ситуацій.</p>
                 </div>
                 <div class="benefit">
-                    <p class="benefit-icon">2</p>
-                    <p class="benefit-title">Гнучкий графік</p>
-                    <p class="benefit-text">Обирай зручний час для занять і навчайся у своєму темпі. Легко поєднуй
+                    <p data-aos="flip-right" class="benefit-icon">2</p>
+                    <p data-aos="fade" class="benefit-title">Гнучкий графік</p>
+                    <p data-aos="zoom-in" class="benefit-text">Обирай зручний час для занять і навчайся у своєму темпі.
+                        Легко поєднуй
                         навчання зі школою, хобі або відпочинком.</p>
                 </div>
                 <div class="benefit">
-                    <p class="benefit-icon">3</p>
-                    <p class="benefit-title">Доступ з телефону</p>
-                    <p class="benefit-text">Вчися будь-де — вдома, в дорозі чи навіть на перерві. Усі уроки доступні
+                    <p data-aos="flip-left" class="benefit-icon">3</p>
+                    <p data-aos="fade" class="benefit-title">Доступ з телефону</p>
+                    <p data-aos="zoom-in" class="benefit-text">Вчися будь-де — вдома, в дорозі чи навіть на перерві. Усі
+                        уроки доступні
                         прямо зі смартфона без зайвих складнощів.</p>
                 </div>
                 <div class="benefit">
-                    <p class="benefit-icon">4</p>
-                    <p class="benefit-title">Сертифікат</p>
-                    <p class="benefit-text">Отримай сертифікат після завершення курсу та підтверди свій рівень знань. Це
+                    <p data-aos="flip-right" class="benefit-icon">4</p>
+                    <p data-aos="fade" class="benefit-title">Сертифікат</p>
+                    <p data-aos="zoom-in" class="benefit-text">Отримай сертифікат після завершення курсу та підтверди
+                        свій рівень знань. Це
                         стане чудовим бонусом для навчання або майбутньої роботи.</p>
                 </div>
             </div>
@@ -102,24 +109,30 @@
         <section id="courses" class="courses">
             <p class="courses-title">Курси</p>
             <div class="courses-elements">
-                <div style="background-color: rgb(4, 177, 4);" class="course-body">
+                <div data-aos="flip-down" style="background: #03ab00;
+background: linear-gradient(145deg, rgba(3, 171, 0, 1) 0%, rgba(119, 224, 126, 1) 47%, rgba(92, 247, 74, 1) 100%);"
+                    class="course-body">
                     <p class="course-title">A1 - A2 <br> Beginner</p>
                     <p class="course-text">Ідеальний для новачків в англійській мові. Вивчення мови з нуля.</p>
                 </div>
-                <div style="background-color: rgb(233, 164, 5);" class="course-body">
+                <div data-aos="flip-up" style="background: #ffc300;
+background: linear-gradient(145deg, rgba(255, 195, 0, 1) 0%, rgba(245, 210, 115, 1) 47%, rgba(158, 118, 9, 1) 100%);"
+                    class="course-body">
                     <p class="course-title">B1 - B2 <br> Intermediate</p>
                     <p class="course-text">Середній рівень. Ви можете писати тексти та розмовляти англійською.</p>
                 </div>
-                <div style="background-color: rgb(253, 3, 3);" class="course-body">
+                <div data-aos="flip-down" style="background: #ff0000;
+background: linear-gradient(145deg, rgba(255, 0, 0, 1) 0%, rgba(255, 102, 138, 1) 47%, rgba(158, 9, 9, 1) 100%);"
+                    class="course-body">
                     <p class="course-title">C1 - C2 <br> Advanced</p>
                     <p class="course-text">Найвищий рівень англійської. Як ви сюди дійшли?</p>
                 </div>
             </div>
         </section>
         <section id="reviews" class="reviews">
-            <p class="reviews-title">Що люди кажуть про нас?</p>
+            <p data-aos="fade" class="reviews-title">Наші відгуки</p>
             <div class="reviews-elements">
-                <div class="review-body">
+                <div data-aos="fade" class="review-body">
                     <div class="review-title">
                         <i class="fa-regular fa-user"></i>
                         <p>Lilia</p>
@@ -136,7 +149,7 @@
                             та матеріали уроків, які можна продивитись будь-коли.</p>
                     </div>
                 </div>
-                <div class="review-body">
+                <div data-aos-delay="100" data-aos="fade" class="review-body">
                     <div class="review-title">
                         <i class="fa-regular fa-user"></i>
                         <p>Hacker92836</p>
@@ -153,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="review-body">
+                <div data-aos-delay="200" data-aos="fade" class="review-body">
                     <div class="review-title">
                         <i class="fa-regular fa-user"></i>
                         <p>Danylo472</p>
@@ -173,15 +186,15 @@
         </section>
         <section class="CTA">
             <div class="CTA-elements">
-                <p class="CTA-title">Спробуй перший урок безкоштовно!</p>
-                <p class="CTA-text">Доєднуйся до 3000 учнів та вивчай англійську з професіоналами.</p>
-                <a href="course.html">Записатися на пробний урок</a>
+                <p data-aos="zoom-out" class="CTA-title">Спробуй перший урок безкоштовно!</p>
+                <p data-aos="fade-up" class="CTA-text">Доєднуйся до 3000 учнів та вивчай англійську з професіоналами.</p>
+                <a data-aos="flip-down" href="course.html">Записатися на пробний урок</a>
             </div>
         </section>
         <section id="questions" class="questions">
-            <p class="questions-title">Нас часто питають..</p>
+            <p data-aos="fade-right" class="questions-title">Нас часто питають..</p>
             <div class="questions-elements">
-                <div class="question-body">
+                <div data-aos="zoom-out" class="question-body">
                     <div class="question-title">
                         <p>Як обрати перший курс?</p>
                         <i class="fa-solid fa-caret-down"></i>
@@ -191,7 +204,7 @@
                             покажуть результат та курс, який вам підходить. За бажанням можна обрати інший курс.</p>
                     </div>
                 </div>
-                <div class="question-body">
+                <div data-aos="zoom-out" class="question-body">
                     <div class="question-title">
                         <p>Чи можна переносити уроки?</p>
                         <i class="fa-solid fa-caret-down"></i>
@@ -201,7 +214,7 @@
                             та повідомте час та дату на яку ви хочете перенести заняття.</p>
                     </div>
                 </div>
-                <div class="question-body">
+                <div data-aos="zoom-out" class="question-body">
                     <div class="question-title">
                         <p>Чи будуть тести або контрольні?</p>
                         <i class="fa-solid fa-caret-down"></i>
@@ -211,7 +224,7 @@
                             робіт або тестів як у звичайній школі не буде. (Ну і слава богу)</p>
                     </div>
                 </div>
-                <div class="question-body">
+                <div data-aos="zoom-out" class="question-body">
                     <div class="question-title">
                         <p>Чи можна вивчати інші мови?</p>
                         <i class="fa-solid fa-caret-down"></i>
@@ -243,8 +256,9 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
